@@ -467,19 +467,20 @@ p,
 }
 .blogs .para {
   color: #616066 !important;
+  margin-bottom: 15px;
 }
 
 #blog-swiper.swiper {
   width: 100%;
   height: 100%;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 #blog-swiper .swiper-wrapper {
-  padding: 15px;
+  /* padding: 15px; */
 }
 #blog-swiper .swiper-slide {
   max-width: 450px !important;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 .blog-content .pa {
   font-size: 15px;
