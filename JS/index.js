@@ -1,3 +1,9 @@
+// Aos 
+AOS.init();
+
+
+
+// Header
 const ham = document.querySelector(".ham");
 console.log("ham");
 const nav = document.querySelector(".nav-collapse");

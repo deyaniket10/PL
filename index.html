@@ -10,9 +10,16 @@
     <!-- Splider css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
     <link rel="stylesheet" href="./CSS/index.css">
+    <!-- <AOS CSS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
     <header class="header-section">
         <div class="container">
             <div class="header-wrapper">
@@ -103,13 +110,13 @@
     <!-- View cart section -->
     <section class="view-cart-section" id="view-cart">
         <div class="container">
-            <div class="view-cart-head">
+            <div class="view-cart-head" >
                 <div class="title2">Most Viewed</div>
                 <div class="para">Discover a range of vacation homes worldwide. book securely and get
                     expert customer support for a stress free stay </div>
             </div>
             <div class="row">
-                <div class="col4">
+                <div class="col4" data-aos="flip-left">
                     <div class="view-cart-box">
                         <img src="./Assets/cart1.png" alt="House photo" class="cart-img">
                         <div class="view-cart-para">
@@ -131,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col4">
+                <div class="col4" data-aos="zoom-in-up">
                     <div class="view-cart-box">
                         <img src="./Assets/cart2.png" alt="House photo" class="cart-img">
                         <div class="view-cart-para">
@@ -151,7 +158,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col4">
+                <div class="col4" data-aos="zoom-in-left">
                     <div class="view-cart-box">
                         <img src="./Assets/cart3.png" alt="House photo" class="cart-img">
                         <div class="view-cart-para">
@@ -181,12 +188,12 @@
     <section class="house-section">
         <div class="container">
             <div class="row">
-                <div class="col6">
+                <div class="col6" data-aos="fade-right" >
                     <div class="house">
                         <img src="./Assets/house.png" alt="House img" class="house-img">
                     </div>
                 </div>
-                <div class="col6 house-content">
+                <div class="col6 house-content" data-aos="fade-left">
                     <div class="title2">The Easiest Method To Find
                         a House</div>
                     <div class="para">Lorem ipsum dolor sit amet consectetur. Dui dolor pretium consectetur odio neque
@@ -495,7 +502,7 @@
 
     <!-- Splider JS -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js" defer></script>
-
+    
 
     <script src="./JS/index.js"></script>
 </body>
