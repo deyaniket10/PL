@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog & Testimonial Sections</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.5;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        /* Section titles */
+        h2 {
+            text-align: center;
+            margin: 2rem 0 1rem;
+        }
+
+        /* Testimonials */
+        .testi-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .testi-slider {
+            display: flex;
+            scroll-behavior: smooth;
+            overflow-x: auto;
+        }
+
+        .testi-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            flex: 0 0 80%;
+            margin: 0 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .testi-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .prev-btn,
+        .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            font-size: 2rem;
+            padding: 0.2rem 0.8rem;
+            cursor: pointer;
+        }
+
+        .prev-btn {
+            left: 5px;
+        }
+
+        .next-btn {
+            right: 5px;
+        }
+
+        /* Blogs */
+        .blog-container {
+            display: flex;
+            /* flex-wrap: wrap; */
+            gap: 1.5rem;
+            max-width: 1400px;
+            margin: auto;
+            padding: 1rem;
+            justify-content: center;
+        }
+
+        .blog-card {
+            max-width: 456px;
+            background: #fff;
+            padding: 16px;
+            border-radius: 25px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            /* flex: 1 1 300px; */
+            transition: transform 0.2s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .blog-content {
+            padding: 1rem;
+        }
+
+        .blog-content h3 {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .blog-content p {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .blog-content a {
+            color: #0077cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Navigation arrows override */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #0077cc;
+        }
+
+        /* Pagination bullets */
+        .swiper-pagination-bullet {
+            background: #0077cc;
+            opacity: 0.6;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+
+        /* Responsive breakpoints */
+        @media (min-width: 768px) {
+            .blog-swiper .swiper-slide {
+                width: auto;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width:768px) {
+            .testi-card {
+                flex: 0 0 90%;
+            }
+        }
+
+        @media (max-width:480px) {
+            .testi-card {
+                flex: 0 0 100%;
+            }
+
+            .prev-btn,
+            .next-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Testimonials Section -->
+    <!-- <section class="testimonials">
+        <h2>Testimonials from Clients</h2>
+        <div class="testi-container">
+            <button class="prev-btn">&#10094;</button>
+            <div class="testi-slider">
+                <div class="testi-card">
+                    <img src="https://i.pravatar.cc/100?img=1" alt="Client">
+                    <h3>Mr. Soumyadip Ghosh</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur...</p>
+                </div>
+                <div class="testi-card">
+                    <img src="https://i.pravatar.cc/100?img=2" alt="Client">
+                    <h3>Mr. Soumik Sen</h3>
+                    <p>Justo vivamus hendrerit risus et elit...</p>
+                </div>
+                <div class="testi-card">
+                    <img src="https://i.pravatar.cc/100?img=3" alt="Client">
+                    <h3>Mrs. Manpreet Kaur</h3>
+                    <p>Fringilla quisque arcu sagittis lectus nibh...</p>
+                </div>
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+    </section> -->
+
+    <!-- Blogs Section -->
+    <section class="blogs">
+        <h2>Our Recent Blogs</h2>
+        
+        <div class="blog-container swiper-wrapper ">
+            <div class="swiper-slide">
+                <div class="blog-card">
+                    <img src="./Assets/blog1.png" alt="Blog">
+                    <div class="blog-content">
+                        <h3>Essential Steps for First-Time Homebuyers
+                            to Follow</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Eget euismod in cursus lobortis vel. Non at porttitor
+                            tempus ornare eu in nisi egestas sit. Sit id nisl sed magnis in egestas facilisis aliquam.
+                        </p>
+                        <a href="#">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="blog-card">
+                    <img src="./Assets/blog2.png" alt="Blog">
+                    <div class="blog-content">
+                        <h3>Top Market Indicators Every Buyer Should Know</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Eget euismod in cursus lobortis vel. Non at porttitor
+                            tempus ornare eu in nisi egestas sit. Sit id nisl sed magnis in egestas facilisis aliquam.
+                        </p>
+                        <a href="#">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="blog-card">
+                    <img src="./Assets/blog3.png" alt="Blog">
+                    <div class="blog-content">
+                        <h3>The Benefits of Diversifying Your Real Estate Portfolio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur. Eget euismod in cursus lobortis vel. Non at porttitor
+                            tempus ornare eu in nisi egestas sit. Sit id nisl sed magnis in egestas facilisis aliquam..
+                        </p>
+                        <a href="#">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination & Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // const slider = document.querySelector('.testi-slider');
+        // const prev = document.querySelector('.prev-btn');
+        // const next = document.querySelector('.next-btn');
+
+        // prev.addEventListener('click', () => {
+        //     slider.scrollBy({ left: -slider.offsetWidth * 0.8, behavior: 'smooth' });
+        // });
+        // next.addEventListener('click', () => {
+        //     slider.scrollBy({ left: slider.offsetWidth * 0.8, behavior: 'smooth' });
+        // });
+
+        // // Optional: swipe/drag support
+        // let isDown = false, startX, scrollLeft;
+        // slider.addEventListener('mousedown', e => {
+        //     isDown = true;
+        //     startX = e.pageX - slider.offsetLeft;
+        //     scrollLeft = slider.scrollLeft;
+        //     slider.style.cursor = 'grabbing';
+        // });
+        // slider.addEventListener('mouseleave', () => {
+        //     isDown = false; slider.style.cursor = '';
+        // });
+        // slider.addEventListener('mouseup', () => {
+        //     isDown = false; slider.style.cursor = '';
+        // });
+        // slider.addEventListener('mousemove', e => {
+        //     if (!isDown) return;
+        //     e.preventDefault();
+        //     const x = e.pageX - slider.offsetLeft;
+        //     slider.scrollLeft = scrollLeft - (x - startX);
+        // });
+
+        // Blog 
+        const swiper = new Swiper(".blog-swiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                clickable: true
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
