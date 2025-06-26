@@ -4,8 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-html body {
-  overflow-x: hidden;
+html,body {
+  overflow-x: hidden !important;
 }
 body {
   font-family: "Syne", sans-serif;
@@ -323,40 +323,7 @@ p,
   color: #616066 !important;
   margin-bottom: 30px;
 }
-.house-section .house {
-  position: relative;
-  left: -500px;
-  animation-name: house-bg;
-  animation-delay: 1s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-.house-section .house-content {
-  position: relative;
-  right: -500px;
-  animation-name: content-bg;
-  animation-delay: 1s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-@keyframes content-bg {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translateX(-500px);
-  }
-}
-@keyframes house-bg {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translateX(500px);
-  }
-}
+
 /* Work Section */
 .work-section {
   padding-bottom: 300px;
@@ -634,7 +601,7 @@ p,
     -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
     animation-name: nav-show;
-    animation-duration: 4s;
+    animation-duration: 1s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
