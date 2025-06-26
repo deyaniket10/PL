@@ -164,7 +164,7 @@ p,
 }
 
 .slide1 {
-  background: url(../Assets/BannerBg.png) no-repeat center;
+  background: url(../Assets/BannerBg.png) no-repeat center/cover;
 }
 
 .banner-content1 {
@@ -174,7 +174,7 @@ p,
 }
 
 .slide2 {
-  background: url(../Assets/Bannerbg2.png) no-repeat center;
+  background: url(../Assets/Bannerbg2.png) no-repeat center/cover;
 }
 
 .banner-content2 {
@@ -184,7 +184,7 @@ p,
 }
 
 .slide3 {
-  background: url(../Assets/Bannerbg3.png) no-repeat center;
+  background: url(../Assets/Bannerbg3.png) no-repeat center/cover;
 }
 
 .banner-content3 {
