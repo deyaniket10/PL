@@ -4,7 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,body {
+html,
+body {
   overflow-x: hidden !important;
 }
 body {
@@ -424,6 +425,29 @@ p,
 .agent-house-content .para {
   color: #616066 !important;
 }
+/* Testimonial Section */
+.testimonial-top {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial-top > .left-img {
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+}
+.testimonial-top > .star {
+  width: 120px;
+  height: 22px;
+}
+.left-img > img {
+  border-radius: 50%;
+}
+.left-img > img,
+.star > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 /* Blogs Swiper */
 .blogs {
   padding-block: 75px;
@@ -479,6 +503,7 @@ p,
   background-color: #ffffff;
   box-shadow: 1px 2px 5px gainsboro;
   border-radius: 15px;
+  margin-bottom: 15px;
 }
 .blog-card > img {
   width: 100%;
@@ -683,16 +708,16 @@ p,
   .sub {
     flex-wrap: wrap;
   }
-  .house-content{
+  .house-content {
     margin-top: 25px;
   }
-  .agent-box{
-    max-width: 400px ;
+  .agent-box {
+    max-width: 400px;
     margin: auto;
   }
 }
 @media screen and (max-width: 576px) {
-  #banner-swiper .swiper-slide{
+  #banner-swiper .swiper-slide {
     min-height: 600px;
   }
   .banner-content {
@@ -731,7 +756,7 @@ p,
     margin: auto;
     margin-bottom: 10px;
   }
-  .work-section{
+  .work-section {
     padding-block: 50px;
   }
   .view-cart-btn > a {
@@ -741,15 +766,14 @@ p,
   .house-content .para {
     margin-bottom: 10px;
   }
-  .foot-head{
+  .foot-head {
     font-size: 22px;
     text-align: center;
-
   }
-  .mail{
+  .mail {
     width: 100%;
   }
-  .foot-head+p{
+  .foot-head + p {
     font-size: 12px;
     text-align: center;
   }
@@ -757,10 +781,10 @@ p,
     gap: 15px;
     text-align: center;
   }
-  .sub .blue-btn{
+  .sub .blue-btn {
     width: 100% !important;
   }
-  .agent-house-section{
+  .agent-house-section {
     padding: 40px 0;
   }
 }
