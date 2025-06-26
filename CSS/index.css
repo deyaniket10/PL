@@ -579,6 +579,7 @@ p,
   max-width: 33%;
   object-fit: cover;
   border-radius: 10px;
+  cursor: pointer;
 }
 .address > div:first-child {
   text-align: center;
@@ -682,6 +683,9 @@ p,
   .sub {
     flex-wrap: wrap;
   }
+  .house-content{
+    margin-top: 25px;
+  }
 }
 @media screen and (max-width: 576px) {
   .banner-content {
@@ -720,6 +724,9 @@ p,
     margin: auto;
     margin-bottom: 10px;
   }
+  .work-section{
+    padding-block: 50px;
+  }
   .view-cart-btn > a {
     width: 100%;
   }
@@ -727,8 +734,25 @@ p,
   .house-content .para {
     margin-bottom: 10px;
   }
+  .foot-head{
+    font-size: 22px;
+    text-align: center;
+
+  }
+  .mail{
+    width: 100%;
+  }
+  .foot-head+p{
+    font-size: 12px;
+  }
   .footer-middle > div {
     gap: 15px;
     text-align: center;
+  }
+  .sub .blue-btn{
+    width: 100% !important;
+  }
+  .agent-house-section{
+    padding: 40px 0;
   }
 }
