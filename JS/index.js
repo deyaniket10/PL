@@ -1,7 +1,5 @@
-// Aos 
+// Aos
 AOS.init();
-
-
 
 // Header
 const ham = document.querySelector(".ham");
@@ -11,6 +9,9 @@ const nav = document.querySelector(".nav-collapse");
 ham.addEventListener("click", () => {
   console.log("nav.classList");
   nav.classList.toggle("active");
+
+  // nav.style.overflowY = isOpen ? "hidden" : "auto";
+  // document.querySelector(".nav-collapse").style["overflow"] = "hidden";
 });
 
 //  <!-- Initialize Swiper -->
@@ -67,7 +68,6 @@ const blogSwiper = new Swiper("#blog-swiper", {
   observer: true,
   observeParents: true,
   breakpoints: {
-    
     640: {
       slidesPerView: 1.2,
       spaceBetween: 20,
